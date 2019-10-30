@@ -2,7 +2,7 @@
 export libepoxy
 
 using Libglvnd_jll
-using X11_jll
+using Xorg_libX11_jll
 ## Global variables
 PATH = ""
 LIBPATH = ""
@@ -30,8 +30,8 @@ function __init__()
 
     # Initialize PATH and LIBPATH environment variable listings
     global PATH_list, LIBPATH_list
-    append!.(Ref(PATH_list), (Libglvnd_jll.PATH_list, X11_jll.PATH_list,))
-    append!.(Ref(LIBPATH_list), (Libglvnd_jll.LIBPATH_list, X11_jll.LIBPATH_list,))
+    append!.(Ref(PATH_list), (Libglvnd_jll.PATH_list, Xorg_libX11_jll.PATH_list,))
+    append!.(Ref(LIBPATH_list), (Libglvnd_jll.LIBPATH_list, Xorg_libX11_jll.LIBPATH_list,))
 
     global libepoxy_path = abspath(joinpath(artifact"Libepoxy", libepoxy_splitpath...))
 

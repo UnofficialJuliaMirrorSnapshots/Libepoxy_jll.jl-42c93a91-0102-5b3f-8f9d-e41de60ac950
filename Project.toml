@@ -1,11 +1,11 @@
 name = "Libepoxy_jll"
 uuid = "42c93a91-0102-5b3f-8f9d-e41de60ac950"
-version = "1.5.3+0"
+version = "1.5.3+1"
 
 [deps]
 Libglvnd_jll = "7e76a0d4-f3c7-5321-8279-8d96eeed0f29"
-X11_jll = "546b0b6d-9ca3-5ba2-8705-1bc1841d8479"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
+Xorg_libX11_jll = "4f6342f7-b3d2-589e-9d20-edeb45f2b2bc"
 Libdl = "8f399da3-3557-5675-b5ff-fb832c97cbdb"
 
 [compat]
